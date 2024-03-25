@@ -20,4 +20,3 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
 model.fit(data, labels, epochs=10, batch_size=1)
 new_patient_data = np.array([[32, 0, 1, 0]], dtype=np.float32)  # Gender: Female, Diabetes: Yes, Hypertension: No
 prediction = model.predict(new_patient_data)
-
